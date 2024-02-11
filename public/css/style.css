@@ -1,0 +1,109 @@
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(#3b3434, #18121d);
+
+        }
+ 
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        #contenido {
+            margin-top: 50px; /* Ajusta este valor según tu preferencia */
+            
+            
+        }
+        
+   /* Estilos para el navbar fijo */
+.navbar.fixed-top.active {
+    transform: translateY(0);
+    transition: transform 0.3s;
+}
+
+.navbar.fixed-top {
+    transition: transform 0.3s;
+}
+
+          
+          #searchInput {
+            width: 300px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+          }
+          
+        /* Estilos para la barra de navegación */
+        .navbar {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 0;
+        }
+
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar h1 {
+            margin: 0;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            display: inline;
+        }
+
+        .navbar ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+        } 
+        h2{
+          color: aliceblue;
+          
+        }
+        p{
+          color: aliceblue;
+          font-size: larger;
+        }
+        /* Estilos para el pie de página */
+    
+
+
+        /* Resaltar sección activa en el navbar */
+        .navbar-nav .nav-item.active .nav-link {
+            font-weight: bold;
+        }
+ 
+        .card {
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+          }
+      
+          .card:hover {
+            transform: scale(1.05);
+          }
+      
+          .btn-red {
+            background-color: red;
+            color: white;
+          }
+      
+          .btn-blue {
+            background-color: blue;
+            color: white;
+          }
+      
+          .btn-yellow {
+            background-color: yellow;
+            color: black;
+          }

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neptune</title>
+    <!-- Enlace al archivo CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Enlace al archivo CSS personalizado -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Enlace a los iconos de Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+
+.footer {
+	background-color: #151515;
+	padding: 80px 0;
+}
+
+.container {
+	max-width: 1170px;
+	margin: auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul {
+	list-style: none;
+}
+
+.footer-col {
+	width: 25%;
+	padding: 0 15px;
+}
+
+.footer-col h4 {
+	font-size: 18px;
+	color: #FFF;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background-color: #E91E63;
+	width: 50px;
+	height: 2px;
+}
+
+.footer-col ul li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+	color: #DDD;
+	display: block;
+	font-size: 1rem;
+	font-weight: 300;
+	text-transform: capitalize;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+	color: #FFF;
+	padding-left: 7px;
+}
+
+.footer-col .social-links a {
+	color: #FFF;
+	background-color: rgba(255, 255, 255, 0.2);
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	text-align: center;
+	margin: 0 10px 10px 0;
+	line-height: 40px;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+	color: #151515;
+	background-color: #FFF;
+}
+
+@media(max-width: 767px) {
+	.footer-col {
+		width: 50%;
+		margin-bottom: 30px;
+	}
+}
+
+@media(max-width: 574px) {
+	.footer-col {
+		width: 100%;
+	}
+}
+</style>
+<body>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+              <img src="./img/logo.png" alt="Vapesitoh Logo" height="100" class="mr-5">NEPTUNE
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto"> <!-- Mueve los elementos al lado derecho -->
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#" data-page="inicio">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="pc.html" data-page="descargas-pc">Programas pc</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./juegos.html" data-page="juegos-pc">Juegos pc</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="android.html" data-page="descargas-apk">Descargas APK</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <<br><br><br><br><br>
+    <div id="contenido" class="container">
+        <!-- Aquí se mostrará el contenido cargado dinámicamente -->
+        <!-- Contenedor para el texto de la página principal -->
+        <div id="texto-principal" class="my-5">
+            <style>
+
+
+.main-content {
+  max-width: 700px;
+  margin: 4em auto 0;
+  text-align: center;
+}
+
+h1 {
+  margin: 2em 0;
+  color: #fff;
+}
+
+svg {
+  display: inline-block;
+}
+
+.illustration {
+  position: relative;
+  align-self: end;
+  margin: auto;
+  height: 250px;
+  width: 250px;
+}
+
+.boy,
+.scenery,
+.background-items,
+.foreground-items {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.scenery {
+  transition: all 200ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.background-items {
+  transition: all 200ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 100ms;
+  top: 23px;
+}
+
+.foreground-items {
+  transition: all 200ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 200ms;
+  bottom: 20px;
+}
+
+.home-body {
+  .foreground-items {
+    margin-left: -60px;
+  }
+}
+
+.outdoor-person {
+  .foreground-items {
+    margin-right: -80px;
+  }
+}
+
+.boy {
+  bottom: 25px;
+  margin-right: -65px;
+  z-index: 10;
+}
+
+.person-type > div {
+  transform: scale(0);
+  opacity: 0;
+}
+
+.person-type.active > div {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.option-wrapper {
+  display: flex;
+  margin: 3em auto;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 4px;
+  padding: 5px;
+  max-width: 300px;
+  font-size: 19px;
+  line-height: 1.2;
+}
+
+.option {
+  transition: all 200ms ease;
+  padding: 10px 10px 8px;
+  width: 50%;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.option.active {
+  background: #fff;
+  color: #333;
+  pointer-events: none;
+}
+
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.explanation {
+  max-width: 700px;
+  margin: 4em auto;
+}
+
+
+
+
+            </style>
+            <div class="main-content">
+                <h1>Bienvenido a NEPTUNE</h1>
+                <div class="illustration">
+                  <div class="boy">
+                    <img src="https://meowlivia.s3.us-east-2.amazonaws.com/codepen/boy.svg" width="90px">
+                  </div>
+                  <div class="person-type-wrapper">
+                    <div class="person-type active home-body">
+                      <div class="scenery">
+                        <img src="https://meowlivia.s3.us-east-2.amazonaws.com/codepen/indoor.svg" height="250">
+                      </div>
+                      <div class="background-items">
+                        <img src="https://meowlivia.s3.us-east-2.amazonaws.com/codepen/furniture.svg" width="270">
+                      </div>
+                      <div class="foreground-items">
+                        <img src="https://meowlivia.s3.us-east-2.amazonaws.com/codepen/playstation.svg" width="65">
+                      </div>
+                    </div>
+                    <div class="person-type outdoor-person">
+                      <div class="scenery">
+                        <img src="https://meowlivia.s3.us-east-2.amazonaws.com/codepen/outdoor.svg" height="250">
+                      </div>
+                      <div class="background-items">
+                        <img src="https://meowlivia.s3.us-east-2.amazonaws.com/codepen/sky.svg" width="220">
+                      </div>
+                      <div class="foreground-items">
+                        <img src="https://meowlivia.s3.us-east-2.amazonaws.com/codepen/dogtree.svg" width="200">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="option-wrapper">
+                  <div class="option active" data-option="home">Estas a salvo lejos de la publicidad solo disfruta</div>
+                  <div class="option" data-option="outdoor">Puedes salir de casa mientras se descargan tus programas</div>
+                </div>
+              </div>
+            
+            
+              <div class="row justify-content-center">
+                <div class="col-md-9 text-center">
+                    <h2>Es un lugar sin publicidad</h2><br><br>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <p>Neptune es un centro de descargas sin publicidad. Mantenido por Vapesitoh, esperamos que lo disfrutes.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <p>Recuerda unirte a nuestro discord</p>
+                        </div>
+                        <div class="col-md-4">
+                            <p>Si tienes alguna duda sobre el sitio no olvides ir a las redes sociales del dueño de todo este pequeño mundo</p>
+                        </div>
+                    
+                    </div>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-md-2 text-center">
+                    <a href="URL_DEL_DISCORD" target="_blank">
+                        <img src="https://cdn.icon-icons.com/icons2/2428/PNG/512/discord_black_logo_icon_147145.png" alt="Logo de Discord" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <footer class="footer">
+		<div class="container row">
+			<div class="footer-col">
+				<h4>Hecho por</h4>
+				<ul>
+                    <li><a style="color: white;">Vapesitoh o como ustedes me conocen Programas y mas</a></li>
+                   
+                </ul>
+			</div>
+			<div class="footer-col">
+				<h4>Disculpen por desaparecer volvere pronto</h4>
+				<ul>
+		
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h4>Centro de descargas</h4>
+				<ul>
+					<li><a href="#">Programas de pc para Windows</a></li>
+					<li><a href="#">Programas para dispositivos moviles</a></li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h4>follow us</h4>
+				<div class="social-links">
+					<a href="#"><i class="fa-brands fa-discord"></i></a>
+					<a href="#"><i class="fa-brands fa-facebook"></i></a>
+					<a href="#"><i class="fa-brands fa-tiktok"></i></a>
+					<a href="#"><i class="fa-brands fa-x"></i></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+    <!-- Enlace al archivo JavaScript de Bootstrap (opcional, para funcionalidades adicionales) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Enlace a jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Script para cargar contenido dinámicamente -->
+    <script src="/js/2.js"></script>
+</body>
+</html>
+<script>
+    $(document).ready(function(){
+        $('a[data-page="inicio"]').click(function(event){
+            event.preventDefault();
+            location.reload();
+        });
+    });
+
+
+	$(document).ready(function(){
+    // Función para cargar el contenido de pc.html o android.html cuando se hace clic en el enlace correspondiente
+    $('a[data-page]').click(function(event){
+        event.preventDefault(); // Prevenir el comportamiento predeterminado del enlace
+        var page = $(this).data('page');
+        if(page !== "inicio") {
+            $('#contenido').addClass('loading').hide().load($(this).attr('href'), function(){
+                $('#contenido').removeClass('loading').fadeIn(); // Agregar animación de fade in
+                $('a[data-page]').parent().removeClass('active');
+                $(`a[data-page="${page}"]`).parent().addClass('active');
+            });
+        }
+    });
+
+    // Función para cambiar la clase del navbar al hacer scroll
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 50) {
+            $('#navbar').addClass('active');
+        } else {
+            $('#navbar').removeClass('active');
+        }
+    });
+});
+$(document).ready(function(){
+    // Función para cargar el contenido de pc.html o android.html cuando se hace clic en el enlace correspondiente
+    $('a[data-page]').click(function(event){
+        event.preventDefault(); // Prevenir el comportamiento predeterminado del enlace
+        var page = $(this).data('page');
+        if(page !== "inicio") {
+            $('#texto-principal').hide(); // Ocultar el contenido principal
+            $('#contenido').addClass('loading').hide().load($(this).attr('href'), function(){
+                $('#contenido').removeClass('loading').fadeIn(); // Agregar animación de fade in
+                $('a[data-page]').parent().removeClass('active');
+                $(`a[data-page="${page}"]`).parent().addClass('active');
+            });
+        }
+    });
+});
+</script>
+<script>
+    $(".option").on("click", function() {
+  $(".person-type").removeClass("active");
+  $(".option").removeClass("active");
+  $(this).addClass("active");
+  var type = $(this).data("option");
+  console.log($(type));
+
+  setTimeout(function() {
+    if (type === "home") {
+      $(".home-body").addClass("active");
+    } else if (type === "outdoor") {
+      $(".outdoor-person").addClass("active");
+    }
+  }, 500);
+});
+
+</script>
